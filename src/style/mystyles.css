@@ -1,0 +1,69 @@
+
+div.container {
+  justify-content: center;
+  padding-top: 10vmin;
+}
+
+.game-board {
+  justify-content: center;
+  display: grid;
+  grid-template-rows: 35% 35% 35%;
+  grid-template-columns: 35% 35% 35%;
+}
+
+.cell {
+  /* background: #444; */
+  /* border: 1px solid #555; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #AAA;
+}
+
+.console {
+  font-family: 'Fira Mono';
+  /* width: 100vim; */
+  margin-top: -5vmin;
+  padding-bottom: 4vmin;
+  top: '50%';
+  left: '50%';
+  transform: 'translate(-50%, -50%)';
+  width: "50%";
+  height: 40vmin;
+  /* box-sizing: border-box; */
+  border: '2px solid #000';
+  /* padding-left: 10vmin; */
+  /* margin: auto; */
+  /* justify-content: flex-start; */
+  /* align-items: flex-start; */
+  
+}
+
+.console header {
+  
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  background-color: #555;
+  height: 35px;
+  line-height: 45px;
+  text-align: center;
+  color: #DDD;
+  width: 100vmin;
+}
+
+.console .consolebody {
+  align-items:flex-end;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  box-sizing: border-box;
+  padding: 20px;
+  height: calc(100% - 40px);
+  width: 100vmin;
+  overflow: scroll;
+  background-color: #000;
+  color: #63de00;
+}
+
+.console .consolebody p {
+  line-height: 1.5rem;
+}
